@@ -38,11 +38,15 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header class="max-w-screen-xl mx-auto">
-      <div class="navbar bg-base-100">
+    <header class="max-w-screen-xl mx-5 lg:mx-auto">
+      <!-- Navbar -->
+      <div class="navbar p-0 bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost pl-0 lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -89,7 +93,7 @@
             </ul>
           </div>
           <a
-            href="/home"
+            href="/"
             class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-custom-color2"
             >Hockey<span class="text-custom-color1">’</span>s</a
           >
@@ -134,10 +138,89 @@
           </a>
         </div>
       </div>
+      <!-- Banner or Carousel -->
+      <section class="relative">
+        <div class="carousel w-full h-52 md:h-96 lg:h-[550px] mt-10">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./assets/Images/1.png" class="w-full" />
+            <div
+              class="absolute flex gap-4 transform -translate-y-1/2 left-[35%] md:left-[43%] lg:left-8 bottom-0 lg:bottom-8">
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-custom-color2 text-white border-0 hover:bg-custom-color2 hover:text-white"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-custom-color2 text-white border-0 hover:bg-custom-color2 hover:text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./assets/Images/2.png" class="w-full" />
+            <div
+              class="absolute flex gap-4 transform -translate-y-1/2 left-[35%] md:left-[43%] lg:left-8 bottom-0 lg:bottom-8">
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-custom-color2 text-white border-0 hover:bg-custom-color2 hover:text-white"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-custom-color2 text-white border-0 hover:bg-custom-color2 hover:text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./assets/Images/3.png" class="w-full" />
+            <div
+              class="absolute flex gap-4 transform -translate-y-1/2 left-[35%] md:left-[43%] lg:left-8 bottom-0 lg:bottom-8">
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-custom-color2 text-white border-0 hover:bg-custom-color2 hover:text-white"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-custom-color2 text-white border-0 hover:bg-custom-color2 hover:text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./assets/Images/4.png" class="w-full" />
+            <div
+              class="absolute flex gap-4 transform -translate-y-1/2 left-[35%] md:left-[43%] lg:left-8 bottom-0 lg:bottom-8">
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-custom-color2 text-white border-0 hover:bg-custom-color2 hover:text-white"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-custom-color2 text-white border-0 hover:bg-custom-color2 hover:text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full lg:w-[500px] static lg:absolute lg:right-8 lg:bottom-8 bg-custom-color2 text-white p-8 space-y-4 rounded-2xl mt-4 lg:mt-0">
+          <h3 class="text-lg md:text-2xl font-extrabold">
+            Meet all the heroes from the field 
+          </h3>
+          <p class="text-[14px] md:text-base text-[rgba(255,255,255,0.6)] font-medium">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+      </section>
     </header>
 
     <!-- Main Section -->
-    <main class="max-w-screen-xl my-32 mx-auto"></main>
+    <main class="max-w-screen-xl my-32 mx-5 lg:mx-auto"></main>
 
     <!-- Footer Section -->
     <footer></footer>
