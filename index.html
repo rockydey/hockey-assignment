@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hockey's</title>
     <!-- CSS Link -->
     <link rel="stylesheet" href="./styles/hockeys.css" />
+    <!-- Tailwind CSS & DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Custom Classes -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "custom-color1": "#FF4240",
+              "custom-color2": "#131318",
+              "custom-color3": "rgba(19, 19, 24, 0.60)",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body></body>
+  <body>
+    <!-- Header Section -->
+    <header class="max-w-screen-xl"></header>
+
+    <!-- Main Section -->
+    <main class="max-w-screen-xl my-32"></main>
+
+    <!-- Footer Section -->
+    <footer></footer>
+  </body>
 </html>
